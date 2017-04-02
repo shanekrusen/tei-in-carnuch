@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@font-face {
+    font-family: 'uncial_antiquaregular';
+    src: url('fonts/uncialantiqua-regular-webfont.woff2') format('woff2'),
+         url('fonts/uncialantiqua-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    color: #201b19;
+    overflow: hidden;
+}
+
+.side-nav {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.side-nav h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    width: 75vw;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.header-text {
+    font-family: 'uncial_antiquaregular';
+    width: auto;
+    text-align: center;
+}
+
+.overlay {
+    z-index: 9999;
+    background: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.logo {
+    max-height: 50%;
+    max-width: 75%;
+}
+
+.enter {
+    font-family: 'uncial_antiquaregular';
+}
+
+.click {
+    cursor: pointer;
+}
+
+.green:after {
+    content: '';
+    display: block;
+    margin-left: -5px;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.green:hover:after {
+    width: 100%;
+    background: #19413C;
+}
+
+.ochre:after {
+    content: '';
+    display: block;
+    margin-left: 0px;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.ochre:hover:after {
+    width: 100%;
+    background: #D4AB1D;
+}
+
+.body-green {
+    font-weight: bold;
+    font-style: italic;
+    color: #19413C; 
+}
+
+.body-ochre {
+    font-weight: bold;
+    font-style: italic;
+    color: #D4AB1D;
+}
+
+.body-content {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.body-content p {
+    font-size: 150%;
+}
