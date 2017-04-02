@@ -19,6 +19,7 @@ body {
 }
 
 .side-nav {
+    padding-left: 15px;
     position: fixed;
     left: 0;
     height: 100vh;
@@ -88,7 +89,7 @@ body {
 .green:after {
     content: '';
     display: block;
-    margin-left: -5px;
+    margin-left: 0px;
     height: 3px;
     width: 0px;
     background: transparent;
