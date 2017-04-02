@@ -1,7 +1,7 @@
 $(document).ready(function() {
+    $('.fade').hide();
     $('.body-content').hide();
     $('.home').show();
-    $('.fade').hide();
     setTimeout(function() {
         $('.fade').fadeIn(1600);
     }, 1000);
