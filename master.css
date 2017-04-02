@@ -40,8 +40,11 @@ body {
 }
 
 .side-nav h3 {
+    display: inline-block;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+    white-space: nowrap;
+    width: auto;
 }
 
 .body-container {
