@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $('.fade').hide();
     $('.body-content').hide();
+    $('.published').hide();
     $('.home').show();
     setTimeout(function() {
         $('.fade').fadeIn(1600);
